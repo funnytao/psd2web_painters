@@ -1,0 +1,347 @@
+/* latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Montserrat-Regular'), url(https://fonts.gstatic.com/s/montserrat/v7/zhcz-_WihjSQC0oHJ9TCYPk_vArhqVIZ0nv9q090hN8.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  font-family: 'Montserrat';
+}
+
+header {
+  border-bottom: 8px solid rgb(197, 18, 48);
+  margin-bottom: 0;
+  width: 100%;
+  float: left;
+  display: block;
+  padding: 10px;
+}
+
+.call-number {
+  position: absolute;
+  font-weight: bold;
+  font-size: 20px;
+  right: 22%;
+  top: 7px;
+}
+
+#logo {
+  margin-left: 22%;
+  height: 50px;
+}
+
+#call {
+  color: rgb(1, 75, 140);
+}
+
+#num {
+  color: rgb(196, 19, 47);
+}
+
+#logo, .call-number {
+  display: inline-block;
+}
+
+@media screen and (max-width: 850px) {
+  #logo {
+    margin-left: 10%;
+  }
+
+  .call-number {
+    right: 10%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #logo {
+    display: block;
+    width: 260px;
+    margin-left: calc(50% - 130px);
+  }
+
+  .call-number {
+    position: relative;
+    display: block;
+    width: 190px;
+    margin-left: calc(50% - 95px);
+    right: auto;
+    top: auto;
+  }
+
+  header {
+    padding-bottom: 0px;
+  }
+}
+
+.main-page {
+  overflow: hidden;
+  width: 100%;
+  border-bottom: 20px solid rgb(0, 75, 142);
+  background-image: url('../img/bg.jpg');
+  background-blend-mode: multiply;
+  background-size: 100% auto;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  padding: 20px;
+}
+
+@media screen and (max-width: 700px) {
+  .main-page {
+    background-size: auto 100%;
+    background-position: center;
+  }
+}
+
+.main-tag {
+  border: 3px solid transparent;
+  width: 450px;
+  margin-left: calc(50% - 225px);
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+@media screen and (max-width: 480px) {
+  .main-tag {
+    width: 98%;
+    margin-left: 1%;
+  }
+
+  .main-page {
+    padding: 10px;
+  }
+}
+
+.main-title h2 {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-size: 29px;
+  color: rgb(1, 75, 140);
+  text-align: center;
+}
+
+.main-title h2 span {
+  color: rgb(196, 19, 47);
+}
+
+.main-title h3 {
+  margin-top: 0;
+  font-size: 19px;
+  font-weight: 400;
+  color: rgb(1, 75, 140);
+  text-align: center;
+}
+
+.underline {
+  background-color: rgb(196, 19, 47);
+  height: 2px;
+  width: 70%;
+  margin-left: 15%;
+}
+
+.main-title h4 {
+  font-size: 16px;
+  text-align: center;
+  color: rgb(1, 75, 140);
+  margin-bottom: 15px;
+}
+
+.main-subtitle {
+  background-color: rgba(175, 0, 11, 0.80);
+  text-align: center;
+  color: white;
+}
+
+.main-subtitle h5:first-child {
+  padding-top: 5px;
+  margin-bottom: 0;
+}
+
+.main-subtitle h5:nth-child(2) {
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+
+.main-subtitle h1 {
+  margin-top: 0;
+  font-size: 53px;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.main-subtitle h6 {
+  margin-top: 0;
+  font-size: 10px;
+  padding-bottom: 10px;
+}
+
+@media screen and (max-width: 450px) {
+  .main-title h2 {
+    font-size: 20px;
+  }
+
+  .main-title h3 {
+    font-size: 15px;
+  }
+
+  .main-title h4 {
+    font-size: 13px;
+    margin: 5px;
+  }
+
+  .main-subtitle h5 {
+    font-size: 12px;
+  }
+
+  .main-subtitle h1 {
+    font-size: 43px;
+  }
+
+  .main-subtitle h6 {
+    font-size: 8px;
+  }
+
+  .bonus {
+    font-size: 10px;
+  }
+}
+
+.main-form span{
+  text-align: right;
+  font-size: 10px;
+  padding-top: 4px;
+  padding-right: 10px;
+}
+
+.main-form input {
+  padding: 0 10px;
+}
+
+.main-form .row {
+  margin-bottom: 6px;
+}
+
+.main-form button {
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  margin-left: calc(50% - 65px);
+  width: 130px;
+  border-radius: 2px;
+  padding: 5px;
+  color: white;
+  background-color: rgb(204, 0, 51);
+}
+
+#error-box {
+  display: none;
+}
+
+.main-footer {
+  color: white;
+  width: 100%;
+  background-color: rgb(44, 95, 140);
+  font-size: 12px;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.main-footer .bonus {
+  font-weight: 50;
+  display: inline-block;
+}
+
+.bonus:nth-child(2) {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.phpbox {
+  padding: 0 20px;
+}
+
+.alert {
+  text-align: center;
+  margin-bottom: 0 !important;
+}
+
+.content-text {
+  width: 52%;
+  margin-left: 24%;
+}
+
+.content-text h2 {
+  color: rgb(196, 19, 47);
+  font-size: 26px;
+  font-weight: 600;
+}
+
+.content-text h4 {
+  color: rgb(1, 75, 140);
+  font-size: 15px;
+  font-weight: 550;
+}
+
+.content-text p {
+  font-weight: 500;
+  font-size: 9px;
+  line-height: 1.6;
+}
+
+.bullet-point {
+  list-style-image: url('../img/bullet2.png');
+  list-style-position: inside;
+}
+
+.bullet-point li {
+  font-size: 9px;
+  color: rgb(196, 19, 47);
+  margin-bottom: 2px;
+}
+
+@media screen and (max-width: 700px) {
+  .content-text {
+    width: 80%;
+    margin-left: 10%;
+  }
+
+  .content-text h2 {
+    font-size: 20px;
+  }
+}
+
+footer {
+  color: white;
+  text-align: center;
+  height: 45px;
+  color: white;
+  background-color: rgb(196, 19, 47);
+  border-bottom: 5px solid rgb(1, 75, 140);
+  margin-bottom: 20px;
+  padding-top: 5px;
+}
+
+#footer-title {
+  font-size: 15px;
+  vertical-align: middle;
+}
+
+#footer-num {
+  font-size: 21px;
+  vertical-align: middle;
+}
+
+@media screen and (max-width: 440px) {
+  #footer-title, #footer-num {
+    display: block;
+  }
+
+  footer {
+    height: 60px;
+  }
+}
